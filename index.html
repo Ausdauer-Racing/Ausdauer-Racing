@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ausdauer Racing</title>
+    <meta name="description" content="Exclusive Digital Gallery & Race History for Ausdauer Racing.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <h1>Ausdauer Racing</h1>
+            <p>Digital Gallery & Legacy</p>
+        </div>
+    </header>
+
+    <main class="gallery-container" id="gallery">
+        <!-- Gallery items will be injected here dynamically by script.js -->
+    </main>
+
+    <section class="history-container" id="history">
+        <div class="history-header">
+            <h2>Race History</h2>
+            <p>A legacy of endurance</p>
+        </div>
+        
+        <div class="history-grid">
+            <!-- iRacing -->
+            <div class="history-card">
+                <h3>iRacing</h3>
+                <ul class="race-list">
+                    <li><span>12H Nürburgring Endurance</span> <span class="pos p1">P1</span></li>
+                    <li><span>24H Le Mans Simulation</span> <span class="pos p2">P2</span></li>
+                    <li><span>6H Spa-Francorchamps</span> <span class="pos p3">P3</span></li>
+                    <li><span>24H Daytona Endurance</span> <span class="pos p4">P4</span></li>
+                    <li><span>6H Interlagos Endurance</span> <span class="pos p5">P5</span></li>
+                    <li><span>6H Watkins Glen Endurance</span> <span class="pos p1">P1</span></li>
+                    <li><span>12H Sebring Endurance</span> <span class="pos p2">P2</span></li>
+                    <li><span>6H Le Mans GTP Endurance</span> <span class="pos p3">P3</span></li>
+                </ul>
+            </div>
+
+            <!-- Assetto Corsa -->
+            <div class="history-card">
+                <h3>Assetto Corsa</h3>
+                <ul class="race-list">
+                    <li><span>6H Nürburgring Nordschleife</span> <span class="pos p1">P1</span></li>
+                    <li><span>6H Spa GT3 Endurance</span> <span class="pos p2">P2</span></li>
+                    <li><span>4H Monza Endurance</span> <span class="pos p3">P3</span></li>
+                    <li><span>4H Silverstone GT Endurance</span> <span class="pos p4">P4</span></li>
+                    <li><span>4H Barcelona Endurance</span> <span class="pos p5">P5</span></li>
+                    <li><span>4H Mugello Endurance</span> <span class="pos p1">P1</span></li>
+                </ul>
+            </div>
+
+            <!-- Assetto Corsa Competizione -->
+            <div class="history-card">
+                <h3>Assetto Corsa Competizione</h3>
+                <ul class="race-list">
+                    <li><span>6H Spa GT3 Endurance</span> <span class="pos p1">P1</span></li>
+                    <li><span>4H Monza Endurance</span> <span class="pos p2">P2</span></li>
+                    <li><span>6H Nürburgring GT3 Endurance</span> <span class="pos p3">P3</span></li>
+                    <li><span>4H Imola Endurance</span> <span class="pos p4">P4</span></li>
+                    <li><span>4H Brands Hatch Endurance</span> <span class="pos p5">P5</span></li>
+                    <li><span>4H Barcelona GT3 Endurance</span> <span class="pos p1">P1</span></li>
+                </ul>
+            </div>
+
+            <!-- Le Mans Ultimate -->
+            <div class="history-card">
+                <h3>Le Mans Ultimate</h3>
+                <ul class="race-list">
+                    <li><span>24H Le Mans Ultimate</span> <span class="pos p1">P1</span></li>
+                    <li><span>6H Bahrain</span> <span class="pos p3">P3</span></li>
+                    <li><span>12H Sebring Endurance</span> <span class="pos p3">P3</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption">
+        <span class="close-btn" id="close-lightbox" onclick="closeLightbox()" aria-label="Close Lightbox">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen preview">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
